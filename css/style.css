@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Onest:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;  /*antet dimensiune scris*/
+    font-family: Onest;  /*antet font scris*/
+}
+
+body {
+    margin: 0px;
+}
+
+.header-logo {
+    height: 50px;
+    border-radius: 50%;     /*optional*/
+}
+
+header {
+    background-color: #8686869a;    /*culoarea la antet*/
+    padding: 8px 50px 5px 50px;   /*localizarea iconitei*/
+
+    position: fixed;
+    width: 100%;
+
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    float: right;
+    padding-top: 8px;
+}
+
+nav a {
+    font-size: 130%;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 15px;
+    font-family: Kanit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Kanit;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 15% 25px 15%;
+    position: relative;
+}
+
+p {
+    line-height: 140%;
+}
+
+#intro {
+    min-height: max(100dvh, 700px);
+    background: linear-gradient(#4141413f, #4141413f), url("../images/index.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    height: 100px;
+    border-radius: 50%; /*optional*/
+}
+
+.intro-content {
+    position: absolute;
+    left: 8%;
+    top: 25%;
+
+    color: white;  /*culoarea IPLT...*/
+}
+
+.intro-content h1 {
+    font-size: 300%;
+
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+
+.intro-btn {
+    color: white;
+    font-size: 110%;
+    background-color: #ffffff50;
+    padding: 12px;
+    border: 2px solid #ffffff99;
+    border-radius: 5px;
+
+    margin-top: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.intro-btn:hover {
+    opacity: 80%;
+}
+
+#despre-btn {
+    background-color: #66f05a7d;
+}
+
+.centered {
+    text-align: center;
+}
+
+.p-despre {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+.custom-shape-divider-bottom-1755334589 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1755334589 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-bottom-1755334589 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.slideshow {
+    height: max(60dvh, 250px);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.slide {
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%; /*optional se poate de pus*/
+}
+
+.slide-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: whitesmoke;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.44);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-text p {
+    padding: 5px 10%;
+}
+
+.slide-text i {
+    font-size: 250%;
+}
+
+section > i {
+    font-size: 34px;
+    position: absolute;
+    z-index: -1;
+}
+
+.i1 {
+    top: 6%;
+    left: 13%;
+    animation: icon-anim 3s infinite;
+}
+
+.i2 {
+    bottom: 0.5%;
+    left: 25%;
+    animation: icon-anim 2.5s infinite;
+}
+
+.i3 {
+    bottom: 28%;
+    left: 9%;
+    animation: icon-anim 4s 1.5s infinite;
+}
+.i4 {
+    bottom: 36%;
+    right: 8%;
+    animation: icon-anim 2.5s 0.5s infinite;
+}
+
+.i5 {
+    top: 26%;
+    right: 6%;
+    animation: icon-anim 2.7s 1s infinite;
+}
+
+.i6 {
+    top: 5%;
+    right: 16%;
+    animation: icon-anim 3s 0.7s infinite;
+}
+
+.i7 {
+    bottom: 7%;
+    left: 5%;
+    animation: icon-anim 3.5s 0.2s infinite;
+}
+
+.i8 {
+    left: 5%;
+    top: 40%;
+    animation: icon-anim 3s 1.2s infinite;
+}
+
+.i9 {
+    bottom: 2%;
+    right: 11%;
+    animation: icon-anim 2s 0.2s infinite;
+}
+
+@keyframes icon-anim {
+    0% { transform: scale(1) rotate(0deg); }
+    40% { transform: scale(1.15) rotate(30deg); }
+    70% { transform: rotate(-30deg); }
+    100% { transform: scale(1) rotate(0deg);}
+}
+
+.galerie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galerie-container img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.galerie-container img:hover {
+    transform: scale(1.05);
+}
+
+.row {
+overflow: auto;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.harta {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.contacte-info a{
+    color: black;
+}
+
+.formular-container {
+    background-color: #ffffff55;
+
+    padding: 2px 10px 20px 10px;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 500px;
+
+    margin-right: 35px;
+    border-radius: 10px;
+}
+
+.formular-container input, .formular-container textarea {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 15px;
+
+    resize: none;
+}
+
+#contacte {
+    background: linear-gradient(white, #4c6b76b4);
+
+}
+
+footer {
+    text-align: center;
+    background-color: #4c6b76b4;
+    color: black; /*culoarea textului de jos IPLTAMateevici*/
+    padding: 15px;
+}
+
+#hamburger {
+    color: black; /*culoarea la liniutele din menu sus*/
+    font-size: 170%;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.orar-imagini a {
+    position: relative;
+    width: 220px;
+    height: 220px;
+
+}
+
+.orar-text {
+    position: absolute;
+    color: white;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orar-imagini {
+    border-top: 2px solid lightgray;
+    margin-top: 10px;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.orar-imagini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orar-detalii {
+    border: 2px solid lightgray;
+    padding: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orar-detalii summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .galerie-container img {
+        width: 270px;
+        height: 210px;
+    }
+}
+
+.noutate {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 15px 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 10px;
+}
+
+.noutate p {
+    font-size: 90%;
+}
+
+.noutate img {
+    max-height: 200px;
+    border-radius: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noutate-data {
+    text-align: right;
+    font-size: 70%;
+    position: relative;
+    top: 10px;
+}
+
+@media (max-width: 800px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    .intro-content h1 {
+        font-size: 200%;
+    }
+
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .galerie-container img {
+        width: 160px;
+        height: 140px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .formular-container {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 15px;
+    }
+
+    header {
+        padding-left: 15px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    nav.mobile a {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav.mobile {
+        float: none;
+        padding: 0;
+    }
+
+}
+
